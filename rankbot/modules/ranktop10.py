@@ -10,7 +10,7 @@ from pyrogram.types import Message
 
 
 # --------------------------------------------------------------------------
-mongo_uri = "mongodb+srv://teamdaxx123:teamdaxx123@cluster0.ysbpgcp.mongodb.net/?retryWrites=true&w=majority"
+mongo_uri = "mongodb+srv://tiwarireeta004:peqxLEd36RAg7ors@cluster0.furypd3.mongodb.net/?retryWrites=true&w=majority"
 database_name = "MONGODB"
 # ------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ user_data = {}
 
 
 
-@app.on_message(filters.command("ranks"))
+@app.on_message(filters.command("ranking"))
 def top_members(_, message):
     top_members = top_members_collection.find().sort("total_messages", -1).limit(10)
     
