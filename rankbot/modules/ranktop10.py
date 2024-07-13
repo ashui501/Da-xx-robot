@@ -27,7 +27,7 @@ user_data = {}
 
 
 
-@app.on_message(filters.command("top10"))
+@app.on_message(filters.command("ranks"))
 def top_members(_, message):
     top_members = top_members_collection.find().sort("total_messages", -1).limit(10)
     
